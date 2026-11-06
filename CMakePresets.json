@@ -1,0 +1,15 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "arm-gcc-nmake",
+      "displayName": "APM32E103 with Arm GNU and NMake",
+      "generator": "NMake Makefiles",
+      "binaryDir": "${sourceDir}/build-cmake",
+      "toolchainFile": "${sourceDir}/cmake/arm-none-eabi-toolchain.cmake"
+    }
+  ],
+  "buildPresets": [
+    { "name": "arm-gcc-nmake", "configurePreset": "arm-gcc-nmake" }
+  ]
+}

@@ -1,0 +1,26 @@
+CMakeFiles\s7_226_reconstructed.elf.dir\src\s7_ppi_serial.c.obj: \
+ C:\Projects\PLC226_CN_Reverse\SIMATIC_S7_226_CN_Reverse\src\s7_ppi_serial.c \
+ C:\Projects\PLC226_CN_Reverse\SIMATIC_S7_226_CN_Reverse\include/s7_ppi_comm.h \
+ C:/Setup/arm-gnu-none-eabi/lib/gcc/arm-none-eabi/15.3.1/include/stdint.h \
+ C:/Setup/arm-gnu-none-eabi/arm-none-eabi/include/stdint.h \
+ C:/Setup/arm-gnu-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+ C:/Setup/arm-gnu-none-eabi/arm-none-eabi/include/sys/features.h \
+ C:/Setup/arm-gnu-none-eabi/arm-none-eabi/include/_newlib_version.h \
+ C:/Setup/arm-gnu-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+ C:/Setup/arm-gnu-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+ C:/Setup/arm-gnu-none-eabi/lib/gcc/arm-none-eabi/15.3.1/include/stdbool.h \
+ C:/Setup/arm-gnu-none-eabi/lib/gcc/arm-none-eabi/15.3.1/include/stddef.h \
+ C:/Setup/arm-gnu-none-eabi/arm-none-eabi/include/string.h \
+ C:/Setup/arm-gnu-none-eabi/arm-none-eabi/include/_ansi.h \
+ C:/Setup/arm-gnu-none-eabi/arm-none-eabi/include/newlib.h \
+ C:/Setup/arm-gnu-none-eabi/arm-none-eabi/include/sys/config.h \
+ C:/Setup/arm-gnu-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+ C:/Setup/arm-gnu-none-eabi/arm-none-eabi/include/sys/reent.h \
+ C:/Setup/arm-gnu-none-eabi/arm-none-eabi/include/_ansi.h \
+ C:/Setup/arm-gnu-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+ C:/Setup/arm-gnu-none-eabi/arm-none-eabi/include/sys/_types.h \
+ C:/Setup/arm-gnu-none-eabi/arm-none-eabi/include/machine/_types.h \
+ C:/Setup/arm-gnu-none-eabi/arm-none-eabi/include/sys/lock.h \
+ C:/Setup/arm-gnu-none-eabi/arm-none-eabi/include/sys/_locale.h \
+ C:/Setup/arm-gnu-none-eabi/arm-none-eabi/include/strings.h \
+ C:/Setup/arm-gnu-none-eabi/arm-none-eabi/include/sys/string.h

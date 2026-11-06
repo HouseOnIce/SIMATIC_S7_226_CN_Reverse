@@ -1,0 +1,7 @@
+set(CMAKE_SYSTEM_NAME Generic)
+set(CMAKE_SYSTEM_PROCESSOR cortex-m3)
+set(TOOLCHAIN_BIN "C:/Setup/arm-gnu-none-eabi/bin")
+set(CMAKE_C_COMPILER "${TOOLCHAIN_BIN}/arm-none-eabi-gcc.exe")
+set(CMAKE_ASM_COMPILER "${TOOLCHAIN_BIN}/arm-none-eabi-gcc.exe")
+set(CMAKE_OBJCOPY "${TOOLCHAIN_BIN}/arm-none-eabi-objcopy.exe" CACHE FILEPATH "")
+set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
