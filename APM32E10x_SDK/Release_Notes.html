@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Release Notes for APM32E10x SDK</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #fff;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 500;
+            line-height: 1.1;
+            color: #03234c;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 500;
+            line-height: 1.1;
+            color: #03234c;
+        }
+        mark {
+            background-color: #A6FFE6;
+            color: white;
+            padding: 0.2em;
+        }
+        .collapse {
+            margin-bottom: 10px;
+        }
+        .collapse input[type=checkbox] {
+            display: none;
+        }
+        .collapse label {
+            cursor: pointer;
+            color: #2cd1a2;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            background-color: #f5f5f5;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .collapse label:hover {
+            background-color: #e8e8e8;
+        }
+        .collapse input[type=checkbox]:checked + label {
+            background-color: #03234c;
+            color: white;
+            border-color: #03234c;
+        }
+        .collapse .content {
+            display: none;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-radius: 0 0 4px 4px;
+        }
+        .collapse input[type=checkbox]:checked ~ .content {
+            display: block;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .header-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-title">
+    <h1>Release Notes for <mark>&nbsp;APM32E10x SDK&nbsp;</mark></h1>
+    <p>Copyright &copy; 2022-2026 Geehy Semiconductor</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAR4AAABaCAYAAABudzkYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyVpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDQ2MCwgMjAyMC8wNS8xMi0xNjowNDoxNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjIgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUQ2RUZGRjlGQzNFMTFFRDkyMjhBNTM3Rjk3OEJBQkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUQ2RUZGRkFGQzNFMTFFRDkyMjhBNTM3Rjk3OEJBQkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFRDZFRkZGN0ZDM0UxMUVEOTIyOEE1MzdGOTc4QkFCQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFRDZFRkZGOEZDM0UxMUVEOTIyOEE1MzdGOTc4QkFCQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtRkjf4AACsMSURBVHja7F0H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" alt="Geehy Semiconductor Logo" width="200">
+</div>
+
+<h1 id="update-history">Update History</h1>
+
+<!-- V1.3.3 -->
+<div class="collapse">
+    <input type="checkbox" id="collapse-v133" checked>
+    <label for="collapse-v133">V1.3.3 / 15-September-2026</label>
+    <div class="content">
+        <h2 id="main-changes-v133">Main Changes</h2>
+        <ul>
+            <li>Updated <strong>Keil Pack</strong> to version <strong>1.0.5</strong>, with debug sequence support added.</li>
+            <li><strong>Libraries</strong>
+                <ul>
+                  <li>Add clamping logic for the PLL multiplier in RCM_ReadSYSCLKFreq.</li>
+                </ul>
+            </li>
+            <li><strong>Middlewares</strong>
+                <ul>
+                  <li>Update USB Device Library to V1.2.0.</li>
+                </ul>
+            </li>
+            <li><strong>Examples</strong>
+                <ul>
+                  <li>Adapt USB_OTG examples to USB Device Library V1.2.0.</li>
+                  <li>Changed all examples to call <strong>SystemClockConfig()</strong> in <strong>main()</strong>.</li>
+                  <li>Add SWO_Output example.</li>
+                </ul>
+            </li>
+            <li><strong>Documents</strong>
+                <ul>
+                  <li>Add Quick Start Guide.</li>
+                </ul>
+            </li>
+            <li>Fixed other known issues.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- V1.3.2 -->
+<div class="collapse">
+    <input type="checkbox" id="collapse-v132">
+    <label for="collapse-v132">V1.3.2 / 15-September-2025</label>
+    <div class="content">
+        <h2 id="main-changes-v132">Main Changes</h2>
+        <ul>
+            <li>Fixed some existing bugs.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- V1.3.1 -->
+<div class="collapse">
+    <input type="checkbox" id="collapse-v131">
+    <label for="collapse-v131">V1.3.1 / 15-August-2025</label>
+    <div class="content">
+        <h2 id="main-changes-v131">Main Changes</h2>
+        <ul>
+            <li>Fixed some existing bugs.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- V1.3 -->
+<div class="collapse">
+    <input type="checkbox" id="collapse-v130">
+    <label for="collapse-v130">V1.3 / 30-June-2025</label>
+    <div class="content">
+        <h2 id="main-changes-v130">Main Changes</h2>
+        <ul>
+            <li>Update Library for <strong>1.0.3</strong>.</li>
+            <li>Update Package for <strong>1.0.3</strong>.</li>
+            <li>Fixed some existing bugs.</li>
+            <li>Added some examples.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- V1.2 -->
+<div class="collapse">
+    <input type="checkbox" id="collapse-v120">
+    <label for="collapse-v120">V1.2 / 31-December-2022</label>
+    <div class="content">
+        <h2 id="main-changes-v120">Main Changes</h2>
+        <ul>
+            <li>Update Library for <strong>1.0.2</strong>.</li>
+            <li>Update Package for <strong>1.0.2</strong>.</li>
+            <li>Added Eclipse Support.</li>
+            <li>Added some examples.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- V1.1 -->
+<div class="collapse">
+    <input type="checkbox" id="collapse-v110">
+    <label for="collapse-v110">V1.1 / 08-August-2022</label>
+    <div class="content">
+        <h2 id="main-changes-v110">Main Changes</h2>
+        <ul>
+            <li>Update Package for <strong>1.0.1</strong>.</li>
+            <li>Updated the folder directory structure.</li>
+            <li>Updated EMMC and TMR examples.</li>
+            <li>Added IAR Support.</li>
+            <li>Added USART and RTOS examples.</li>
+            <li>Added library instruction <strong>APM32E10x_SDK_um.chm</strong>.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- V1.0 -->
+<div class="collapse">
+    <input type="checkbox" id="collapse-v100">
+    <label for="collapse-v100">V1.0 / 29-July-2021</label>
+    <div class="content">
+        <h2 id="main-changes-v100">Main Changes</h2>
+        <ul>
+            <li>First Release version of APM32E10x SDK.</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

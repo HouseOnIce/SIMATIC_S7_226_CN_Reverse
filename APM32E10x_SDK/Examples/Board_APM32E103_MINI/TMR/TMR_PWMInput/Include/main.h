@@ -1,0 +1,80 @@
+/*!
+ * @file        main.h
+ *
+ * @brief       Header for main.c module
+ *
+ * @version     V1.0.3
+ *
+ * @date        2025-06-17
+ *
+ * @attention
+ *
+ *  Copyright (C) 2022-2025 Geehy Semiconductor
+ *
+ *  You may not use this file except in compliance with the
+ *  GEEHY COPYRIGHT NOTICE (GEEHY SOFTWARE PACKAGE LICENSE).
+ *
+ *  The program is only for reference, which is distributed in the hope
+ *  that it will be useful and instructional for customers to develop
+ *  their software. Unless required by applicable law or agreed to in
+ *  writing, the program is distributed on an "AS IS" BASIS, WITHOUT
+ *  ANY WARRANTY OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the GEEHY SOFTWARE PACKAGE LICENSE for the governing permissions
+ *  and limitations under the License.
+ */
+
+/* Define to prevent recursive inclusion */
+#ifndef __MAIN_H
+#define __MAIN_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/* Includes */
+#include "stdio.h"
+#include "apm32e10x.h"
+#include "apm32e10x_tmr.h"
+#include "apm32e10x_usart.h"
+#include "apm32e10x_rcm.h"
+
+/** @addtogroup Examples
+  @{
+  */
+
+/** @addtogroup TMR_PWMInput
+  @{
+  */
+
+/** @defgroup TMR_PWMInput_Variables Variables
+  @{
+*/
+
+extern volatile uint32_t tick;
+
+extern uint8_t  irqFlag;
+extern uint32_t IC2Value[2];
+extern double Frequency;
+extern double dutycycle;
+extern uint32_t hightime;
+extern uint32_t Updatecnt;
+extern uint32_t pclk1;
+extern uint32_t pclk2;
+
+/**@} end of group TMR_PWMInput_Variables */
+
+/** @defgroup TMR_PWMInput_Functions Functions
+  @{
+*/
+
+void Delay(void);
+
+/**@} end of group TMR_PWMInput_Functions */
+/**@} end of group TMR_PWMInput */
+/**@} end of group Examples */
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* __MAIN_H */

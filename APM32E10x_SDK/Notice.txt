@@ -1,0 +1,23 @@
+This SDK contains some software subject to open source licenses. In this document, we will introduce you to the terms that
+apply to these open source software components and indicate where you can find these license.
+
+1. \Middlewares\LwIP\
+LwIP is freely available under a BSD-3 license.The source code is derived from "http://download.savannah.nongnu.org/releases/lwip/".
+
+2. \Middlewares\FreeRTOS\FreeRTOS_v202012.00\
+FreeRTOS is freely available under a MIT license.The source code is derived from "https://freertos.org/".
+You can find the license at this directory path.
+
+3. \Middlewares\RTThread\rtthread-nano-master\
+RT-Thread 3.1.5 is freely available under a Apache License 2.0.The source code is derived from "https://www.rt-thread.org/download.html#download-rt-thread-nano". You can find the license at this directory path.
+
+4. \Middlewares\FatFs\
+FatFs is freely available under FatFs License. You can find the license at this directory path.
+
+5. \Libraries\Device\Geehy\APM32E10x\
+APM32E10x is freely available under a Apache-2.0 license. You can find the license at this directory path.
+
+You can also access the applicable open source software terms and related statements at the following URL.
+Apache License : https://opensource.org/license/apache-2-0/
+MIT License : https://opensource.org/license/mit/
+BSD License : https://opensource.org/license/bsd-3-clause/
