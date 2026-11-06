@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"C:/Projects/PLC226_CN_Reverse/SIMATIC_S7_226_CN_Reverse/build-cmake/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
